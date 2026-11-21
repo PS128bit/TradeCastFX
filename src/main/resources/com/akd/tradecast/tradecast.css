@@ -1,0 +1,258 @@
+/* AKD TradeCast - legacy Windows XP / Swing look */
+
+.root {
+    -fx-font-family: "Tahoma", "Segoe UI", "Verdana", sans-serif;
+    -fx-font-size: 11px;
+    -fx-base: #ECE9D8;
+    -fx-background: #ECE9D8;
+    -fx-control-inner-background: #FFFFFF;
+    -fx-accent: #316AC5;
+    -fx-focus-color: #316AC5;
+    -fx-faint-focus-color: transparent;
+}
+
+/* ---------- Buttons ---------- */
+.button {
+    -fx-background-color: #003C74, linear-gradient(to bottom, #FFFFFF 0%, #F4F3EE 60%, #DCD8CB 100%);
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 3, 2;
+    -fx-padding: 3 12 3 12;
+    -fx-text-fill: #000000;
+}
+.button:hover {
+    -fx-background-color: #F8B330, linear-gradient(to bottom, #FFFFFF 0%, #F4F3EE 60%, #DCD8CB 100%);
+}
+.button:pressed {
+    -fx-background-color: #003C74, linear-gradient(to bottom, #DCD8CB 0%, #E8E6DC 100%);
+}
+.button.small {
+    -fx-padding: 0 8 0 8;
+    -fx-font-size: 10px;
+}
+.button.icon {
+    -fx-background-color: transparent;
+    -fx-padding: 2;
+}
+.button.icon:hover {
+    -fx-background-color: #7F9DB9, #FFFFFF;
+    -fx-background-insets: 0, 1;
+}
+
+/* ---------- Inputs ---------- */
+.text-field, .password-field, .combo-box, .date-picker, .text-area {
+    -fx-background-color: #7F9DB9, #FFFFFF;
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 0;
+    -fx-padding: 2 3 2 3;
+}
+.text-field:disabled {
+    -fx-opacity: 1.0;
+}
+.text-field.readonly {
+    -fx-background-color: #7F9DB9, #FFFFFF;
+    -fx-alignment: center-right;
+}
+.text-field.profit { -fx-text-fill: #008000; }
+.text-field.loss { -fx-text-fill: #E00000; }
+
+.combo-box .list-cell { -fx-padding: 1 3 1 3; }
+.combo-box .arrow-button, .date-picker .arrow-button {
+    -fx-background-color: #7F9DB9, linear-gradient(to bottom, #C1D3FB, #9DB9EB);
+    -fx-background-insets: 1, 2;
+    -fx-background-radius: 2;
+}
+.combo-box .arrow, .date-picker .arrow { -fx-background-color: #4D6185; }
+
+/* Password challenge boxes on the login screen */
+.char-box {
+    -fx-pref-width: 20px;
+    -fx-pref-height: 22px;
+    -fx-alignment: center;
+    -fx-padding: 0;
+    -fx-background-color: #A5ACB2, #FFFFFF;
+    -fx-background-insets: 0, 1;
+}
+.char-box:disabled {
+    -fx-background-color: #A5ACB2, #E8E4D6;
+}
+.char-box.example {
+    -fx-pref-width: 16px;
+    -fx-pref-height: 18px;
+    -fx-font-size: 10px;
+}
+
+/* ---------- Labels ---------- */
+.error-label { -fx-text-fill: #E00000; }
+.hint-label { -fx-text-fill: #222222; }
+.section-title { -fx-font-weight: bold; }
+.company-label { -fx-font-weight: bold; -fx-padding: 0 0 0 10; }
+.copyright { -fx-font-size: 10px; -fx-text-fill: #333333; }
+.status-bar {
+    -fx-background-color: #D4D0C8, #ECE9D8;
+    -fx-background-insets: 0, 1 0 0 0;
+    -fx-padding: 4 8 4 8;
+}
+
+/* ---------- Login / dialog backgrounds ---------- */
+.login-pane {
+    -fx-background-color: linear-gradient(to bottom right, #FFFFFF 0%, #F3F3F3 55%, #E4E4E4 100%);
+}
+.login-footer {
+    -fx-border-color: #C9C9C9 transparent transparent transparent;
+    -fx-padding: 6 10 6 10;
+}
+
+/* ---------- Tabs ---------- */
+.tab-pane > .tab-header-area {
+    -fx-padding: 3 3 0 3;
+}
+.tab-pane > .tab-header-area > .tab-header-background {
+    -fx-background-color: #ECE9D8;
+}
+.tab-pane .tab {
+    -fx-background-color: #919B9C, linear-gradient(to bottom, #FFFFFF, #ECEBE6);
+    -fx-background-insets: 0, 1 1 0 1;
+    -fx-background-radius: 3 3 0 0, 2 2 0 0;
+    -fx-padding: 1 6 1 6;
+}
+.tab-pane .tab:selected {
+    -fx-background-color: #E68B2C, #FFC873, #FFFFFF;
+    -fx-background-insets: 0, 1 1 0 1, 3 1 0 1;
+}
+.tab-pane .tab .tab-label { -fx-text-fill: #000000; -fx-font-size: 10px; }
+.tab-pane .tab:selected .tab-label { -fx-text-fill: #E07000; }
+.tab-pane > .tab-content-area {
+    -fx-background-color: #919B9C, #ECE9D8;
+    -fx-background-insets: 0, 1;
+}
+
+/* Internal panel (My Watches, Market Depth, Message Window) title strip */
+.panel-frame {
+    -fx-background-color: #8C98AE, #ECE9D8;
+    -fx-background-insets: 0, 1;
+}
+.panel-titlebar {
+    -fx-background-color: linear-gradient(to bottom, #F6F5F0, #DFDCD0);
+    -fx-padding: 2 4 2 4;
+    -fx-spacing: 3;
+}
+.panel-tab {
+    -fx-background-color: #8C98AE, linear-gradient(to bottom, #FFFFFF, #E6E3D8);
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 2;
+    -fx-padding: 1 6 1 6;
+    -fx-font-size: 10px;
+    -fx-cursor: hand;
+}
+.panel-tab.active {
+    -fx-background-color: #8C98AE, linear-gradient(to bottom, #FFFFFF, #CFE3FF);
+}
+.panel-tab-dot {
+    -fx-fill: #3FA34D;
+    -fx-stroke: #2D6E35;
+}
+.panel-control {
+    -fx-font-size: 10px;
+    -fx-padding: 0 2 0 2;
+    -fx-text-fill: #333333;
+    -fx-cursor: hand;
+}
+.toolbar-strip {
+    -fx-background-color: #D4D0C8, linear-gradient(to bottom, #FBFBF8, #E7E4DA);
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 3 6 3 6;
+    -fx-spacing: 6;
+    -fx-alignment: center-left;
+}
+
+/* ---------- Tables ---------- */
+.table-view {
+    -fx-background-color: #7F9DB9, #FFFFFF;
+    -fx-background-insets: 0, 1;
+    -fx-padding: 1;
+    -fx-table-cell-border-color: #FFFFFF;
+}
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom, #FFFFFF, #EBEADB);
+}
+.table-view .column-header {
+    -fx-background-color: #C7C5B2, linear-gradient(to bottom, #FFFFFF, #EBEADB);
+    -fx-background-insets: 0, 0 1 1 0;
+    -fx-size: 18px;
+}
+.table-view .column-header .label {
+    -fx-font-size: 10px;
+    -fx-font-weight: normal;
+    -fx-alignment: center;
+}
+.table-view .table-cell {
+    -fx-padding: 0 4 0 4;
+    -fx-font-size: 11px;
+}
+.table-row-cell {
+    -fx-cell-size: 18px;
+    -fx-background-color: #FFFFFF;
+    -fx-background-insets: 0;
+}
+.table-row-cell:odd { -fx-background-color: #FFFFFF; }
+.table-row-cell:selected { -fx-background-color: #316AC5; }
+.table-row-cell:selected .table-cell { -fx-text-fill: #FFFFFF; }
+
+/* Market grid: grey legacy grid with white separators */
+.market-grid .table-row-cell,
+.market-grid .table-row-cell:odd {
+    -fx-background-color: #D6D3CE;
+    -fx-table-cell-border-color: #FFFFFF;
+}
+.market-grid .table-row-cell:selected { -fx-background-color: #A6CAF0; }
+.market-grid .table-row-cell:selected .table-cell { -fx-text-fill: inherit; }
+.market-grid .table-row-cell:empty { -fx-background-color: #FFFFFF; }
+
+/* Light grid for reports (Order History) */
+.report-grid .table-row-cell { -fx-background-color: #FFFFFF; }
+.report-grid .table-row-cell:odd { -fx-background-color: #EEF3FB; }
+.report-grid .table-row-cell:selected { -fx-background-color: #316AC5; }
+
+/* Cell colour rules shared by the market grids */
+.cell-up { -fx-text-fill: #008000; }
+.cell-down { -fx-text-fill: #E00000; }
+.cell-buy { -fx-text-fill: #0000C0; }
+.cell-sell { -fx-text-fill: #C000C0; }
+.cell-flash-buy { -fx-background-color: #9CF7C8; }
+.cell-flash-sell { -fx-background-color: #FFFF99; }
+
+.trade-button {
+    -fx-padding: 0 10 0 10;
+    -fx-font-size: 10px;
+}
+
+/* ---------- Titled sections (Portfolio Watch) ---------- */
+.group-box {
+    -fx-border-color: #D0D0BF;
+    -fx-border-width: 0 1 0 0;
+    -fx-padding: 4 12 4 8;
+}
+.group-box-title { -fx-font-weight: bold; -fx-alignment: center; }
+
+/* ---------- Menu bar ---------- */
+.menu-bar {
+    -fx-background-color: linear-gradient(to bottom, #FBFBF8, #E7E4DA);
+    -fx-padding: 0 2 0 2;
+}
+.menu-bar .label { -fx-text-fill: #000000; }
+
+/* Placeholder used for screens still to be built */
+.placeholder {
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #B0B0A0;
+    -fx-border-style: dashed;
+    -fx-padding: 20;
+}
+.placeholder .label { -fx-text-fill: #666666; }
+
+/* Portfolio Watch pies: gold slice for the selected scrip / cash, green for security holdings */
+.worth-pie { -fx-padding: 0; }
+.worth-pie .chart-pie.default-color0 { -fx-pie-color: #F2B705; }
+.worth-pie .chart-pie.default-color1 { -fx-pie-color: #5DBB63; }
+.worth-pie .chart-pie { -fx-border-color: #FFFFFF; -fx-border-width: 0.5; }
+.worth-pie .chart-content { -fx-padding: 2; }
