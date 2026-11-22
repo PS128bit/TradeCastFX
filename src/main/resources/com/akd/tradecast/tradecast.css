@@ -47,6 +47,7 @@
 }
 .text-field:disabled {
     -fx-opacity: 1.0;
+    -fx-background-color: #A5ACB2, #ECE9D8;
 }
 .text-field.readonly {
     -fx-background-color: #7F9DB9, #FFFFFF;

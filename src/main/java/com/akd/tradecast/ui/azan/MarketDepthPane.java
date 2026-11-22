@@ -59,7 +59,7 @@ public final class MarketDepthPane {
 
         ComboBox<String> market = new ComboBox<>(FXCollections.observableArrayList("REG", "FUT", "ODL"));
         market.getSelectionModel().selectFirst();
-        market.setPrefWidth(56);
+        market.setPrefWidth(70);
 
         TextField scripField = new TextField("ANL");
         scripField.setPrefWidth(58);
